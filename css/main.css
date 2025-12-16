@@ -5,6 +5,7 @@ body{
     font-weight: 500;
     font-style: normal;
     text-align: center;
+    margin: 0;
 }
 *{
     list-style-type: none;
@@ -26,8 +27,32 @@ body{
     float: left;
     font-size: 30px;
 }
-h2{
+/* Styling the theme button: */
+.mode-type{
+    text-align: end;
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    padding: 15px;
+
+}
+.mode-type .button{
+    border-radius: 10px;
+    padding: 5px 5px;
+    background-color:#1C3D5A ;
+    border: none;
+    color: white;
+    font-size: 25px;
+}
+.mode-type .button:hover{
+    color: #77c9d4;
+}
+.profile h2{
+    color: #1C3D5A;
     font-size: 28px;
+}
+.profile h3{
+    color: #1C3D5A;
 }
 
 .profile-img{
@@ -35,7 +60,6 @@ h2{
     object-fit: cover;
     border: 2px  solid;
     border-color: #1C3D5A;
-    border-radius: 25%;
 
 }
 .navigation{
@@ -58,9 +82,22 @@ h2{
     color: #77c9d4;
 }
 .about-me{
-    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 10px;
+    width: 50%;
+    border-radius: 20px;
     color: white;
     background-color: #1C3D5A;
+    /* animation */
+    
+}
+.about-me:hover{
+    animation-name: move;
+    animation-duration: 10s;
 }
 .about-me .education{
     text-align: center;
@@ -71,13 +108,19 @@ h2{
 }
 
 .projects{
+    margin: 0 auto;
+    width: 50%;
     color: white;
     background-color: #77c9d4;
-    border-radius: 5px;
+    border-radius: 20px;
     padding-bottom: 6px;
+    margin-top: 15px;
+}
+.projects:hover{
+    animation-name: move;
+    animation-duration: 10s;    
 }
 .card{
-
     padding: 2px 2px;
     background-color: rgb(57, 106, 153);
     margin: 10px 10px;
@@ -86,22 +129,28 @@ h2{
 }
 
 .card button{
-    width: 100%;
     color: white;
+    width: 100%;
     font-size: 20px;
     padding: 10px 10px;
     border-radius: 15px;
     font-family: "Ubuntu", sans-serif;
     background-color: #1C3D5A;
+    cursor: pointer;
 }
 .experience{
+    margin: 0 auto;
+    width: 50%;
     color: white;
     background-color: navy;
-    border-radius: 5px;
+    border-radius: 20px;
     padding-bottom: 6px;
 
 }
-
+.experience:hover{
+    animation-name: move;
+    animation-duration: 10s;
+}
 .exp-card{
     color: white;
     padding: 2px 2px;
@@ -112,7 +161,19 @@ h2{
 
 }
 .contact{
+    border-radius: 20px;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 15px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: cornflowerblue;
+}
+.contact:hover{
+    animation-name: move;
+    animation-duration: 2s;
 }
 .contact-card{
     color: white;
@@ -125,14 +186,36 @@ h2{
 .contact-card a{
     color: white;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
     align-items: center;
     gap: 20px;
 }
+
+.contact-card .contact-list{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    gap: 40px;
+}
+.contact-card a:hover{
+    color: dodgerblue;
+}
+
 
 footer{
     color: white;
     background-color: #1C3D5A;
     font-size: 20px;
+}
+/* i have decided to try some animations ;) */
+@keyframes move {
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        
+        transform: translateX(20px);
+    }
+    100%{
+        transform: translateX(-20px);
+    }
 }

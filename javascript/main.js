@@ -12,3 +12,15 @@ repo1Button.addEventListener("click", ()=>{
 repo2Button.addEventListener("click", ()=>{
     window.open(repo2);
 });
+//Theme changing
+const Theme = document.getElementById("themeBtn");
+Theme.addEventListener("click", ()=>{
+    if (Theme.textContent === "Light Mode"){
+        document.body.style.backgroundColor = "black";
+        Theme.textContent = "Dark Mode";
+    }
+    else{
+        document.body.style.backgroundColor = "white";
+        Theme.textContent = "Light Mode";
+    }
+});
