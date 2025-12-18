@@ -1,18 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-/* template for ubuntu font */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 body{
-    font-family: "Ubuntu", sans-serif;
+    font-family: "Roboto Mono", sans-serif;
     font-weight: 500;
     font-style: normal;
-    text-align: center;
     margin: 0;
 }
+
 *{
     list-style-type: none;
 }
+
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color: #080f3b;
+}
 /* styling the nav bar */
 #nav-bar{
-    background-color: #1C3D5A;
+    background-color: #080f3b;
     height: 40px;
     width: 100%;
     cursor: pointer;
@@ -20,49 +25,41 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 10px;
+
 }
 #nav-bar .logo{
     color: white;
     font-weight: bold;
     float: left;
-    font-size: 30px;
+    font-size: 20px;
 }
-/* Styling the theme button: */
-.mode-type{
-    text-align: end;
-    font-size: 15px;
+.profile{
     color: white;
-    margin-top: 10px;
-    padding: 15px;
-
+    background-color: #1C3D5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.mode-type .button{
-    border-radius: 10px;
-    padding: 5px 5px;
-    background-color:#1C3D5A ;
-    border: none;
-    color: white;
-    font-size: 25px;
+.details{
+    text-align: center;
 }
-.mode-type .button:hover{
-    color: #77c9d4;
-}
-.profile h2{
-    color: #1C3D5A;
-    font-size: 28px;
-}
-.profile h3{
-    color: #1C3D5A;
-}
-
 .profile-img{
+    margin: 0 auto;
     margin-top: 40px;
     object-fit: cover;
     border: 2px  solid;
-    border-color: #1C3D5A;
+    border-color: #080f3b;
+    border-radius: 50%;
+}
+.profile h2{
+    font-size: 40px;
+    text-decoration: underline;
 
 }
 .navigation{
+    margin-left: auto;
+    padding-left: 20px;
     font-size: 20px;
     list-style-type: none;
     display: flex;
@@ -76,146 +73,121 @@ body{
     float: right;
     text-decoration: none;
     margin: 10px;
+    padding-bottom: 15px;
 
 }
 .navigation a:hover{
     color: #77c9d4;
 }
 .about-me{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    border-radius: 10px;
     padding: 10px 10px;
-    width: 50%;
-    border-radius: 20px;
-    color: white;
+    margin: 0 auto;
     background-color: #1C3D5A;
-    /* animation */
-    
-}
-.about-me:hover{
-    animation-name: move;
-    animation-duration: 10s;
-}
-.about-me .education{
+    color: white;
     text-align: center;
+    width: 80%;
+    max-width: 100%;
 }
-.about-me .interests{
-    padding-bottom: 5px;
-    text-align: center;
-}
-
 .projects{
-    margin: 0 auto;
-    width: 50%;
-    color: white;
-    background-color: #77c9d4;
-    border-radius: 20px;
-    padding-bottom: 6px;
-    margin-top: 15px;
-}
-.projects:hover{
-    animation-name: move;
-    animation-duration: 10s;    
-}
-.card{
-    padding: 2px 2px;
-    background-color: rgb(57, 106, 153);
-    margin: 10px 10px;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-
-.card button{
-    color: white;
-    width: 100%;
-    font-size: 20px;
+    border-radius: 10px;
     padding: 10px 10px;
-    border-radius: 15px;
-    font-family: "Ubuntu", sans-serif;
+    margin: 0 auto;
     background-color: #1C3D5A;
+    color: white;
+    text-align: center;
+    width: 80%;
+    max-width: 100%;
+}
+.projects .card{
+    border-radius: 5px;
+   background-color:  #295e8b;
+}
+.card button{
+    border-radius: 5px;
+    padding: 5px 5px ;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #080f3b;
+    background-color: white;
+    width: 100%;
+    border: none;
     cursor: pointer;
 }
-.experience{
+.skill-container{
     margin: 0 auto;
-    width: 50%;
+    width: 80%;
     color: white;
-    background-color: navy;
-    border-radius: 20px;
-    padding-bottom: 6px;
-
+    text-align: center;
+    background-color: #1C3D5A;
+    padding: 10px;
+    border-radius: 10px;
 }
-.experience:hover{
-    animation-name: move;
-    animation-duration: 10s;
-}
-.exp-card{
-    color: white;
-    padding: 2px 2px;
-    background-color:  #2a428c;
-    margin: 10px 10px;
-    border-radius: 15px;
-    margin-bottom: 15px;
-
-}
-.contact{
-    border-radius: 20px;
-    width: 50%;
-    margin: 0 auto;
-    margin-top: 15px;
-    flex-direction: column;
+.skill-container .languages{
+    padding: 0 10px;
     display: flex;
+    font-weight: 100;
     justify-content: center;
-    align-items: center;
-    background-color: cornflowerblue;
-}
-.contact:hover{
-    animation-name: move;
-    animation-duration: 2s;
-}
-.contact-card{
-    color: white;
-    padding: 2px 2px;
-    background-color: rgb(57, 106, 153);
-    margin: 10px 10px;
-    border-radius: 15px;
-    margin-bottom: 15px;
-}
-.contact-card a{
-    color: white;
-    text-decoration: none;
     align-items: center;
     gap: 20px;
 }
-
-.contact-card .contact-list{
+.languages .elem{
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: black;
+}
+.languages .elem:hover{
+    color: #77c9d4;
+}
+.skill-container .Tools {
+    padding: 0 10px;
+    font-weight: 100;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.Tools .elem{
+    font-size: 15px;
+    border-radius: 5px;
     padding: 5px;
-    gap: 40px;
+    background-color: black;
 }
-.contact-card a:hover{
-    color: dodgerblue;
+.Tools .elem:hover{
+    color: #77c9d4;
 }
-
-
-footer{
+.experience{
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 10px 10px;
+    background-color: #295e8b;
     color: white;
-    background-color: #1C3D5A;
-    font-size: 20px;
+    text-align: center;
+    width: 80%;
 }
-/* i have decided to try some animations ;) */
-@keyframes move {
-    0%{
-        transform: translateX(0);
-    }
-    50%{
-        
-        transform: translateX(20px);
-    }
-    100%{
-        transform: translateX(-20px);
-    }
+.contact{
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 10px;
+    background-color: #1C3D5A;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.contact-card button{
+    padding: 6px;
+    margin: 0 6px;
+    font-family: "Roboto Mono", sans-serif;
+    background-color: #080f3b;
+    color: white;
+    border-radius: 50px;
+    border: none;
+}
+footer{
+    text-align: center;
+    background-color: #080f3b;
+    color: white;
+    padding: 10px 10px;
 }
