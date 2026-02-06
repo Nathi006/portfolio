@@ -14,7 +14,7 @@ body{
 .heading{
     font-size: 40px;
     text-align: center;
-    color: #080f3b;
+    color: #162cbb;
 }
 /* styling the nav bar */
 #nav-bar{
@@ -29,7 +29,7 @@ body{
 
 }
 #nav-bar .logo{
-    color: #1C3D5A;
+    color: #162cbb;
     font-weight: bold;
     float: left;
     font-size: 20px;
@@ -38,8 +38,8 @@ body{
 .profile{
     height: 700px;
     color: white;
-    background-color: #1C3D5A;
-    background-image: linear-gradient(#1C3D5A,#080f3b );
+    background-color: #162cbb;
+    background-image: linear-gradient(#1d1d1d,#162cbb );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,7 +71,7 @@ body{
     padding-top: 20px;
 }
 .navigation a{
-    color: #1C3D5A;
+    color: #162cbb;
     float: right;
     text-decoration: none;
     margin: 10px;
@@ -79,23 +79,25 @@ body{
 
 }
 .navigation a:hover{
-    color: #77c9d4;
+    color: #080f3b;
 }
 .about-me{
     border-radius: 10px;
     padding: 10px 10px;
     margin: 0 auto;
-    background-color: #080f3b;
+    background-color: #162cbb;
     color: white;
     text-align: center;
     width: 80%;
+    box-shadow: 8px 8px 0 #000;
     max-width: 100%;
 }
 .projects{
     border-radius: 10px;
     padding: 10px 10px;
     margin: 0 auto;
-    background-color: #080f3b;
+    background-color: #162cbb;
+    box-shadow: 8px 8px 0 #000;
     color: white;
     text-align: center;
     width: 80%;
@@ -114,7 +116,7 @@ body{
     font-size: 16px;
     font-weight: 500;
     color: white;
-    background-color: #080f3b;
+    background-color: #162cbb;
     margin-bottom: 10px;
     border: none;
     cursor: pointer;
@@ -127,7 +129,8 @@ body{
     width: 80%;
     color: white;
     text-align: center;
-    background-color: #080f3b;
+    background-color: #162cbb;
+    box-shadow: 8px 8px 0 #000;
     padding: 10px;
     border-radius: 10px;
 }
@@ -143,11 +146,9 @@ body{
     font-size: 15px;
     border-radius: 5px;
     padding: 5px;
-    background-color: black;
+    background-color: dodgerblue;
 }
-.languages .elem:hover{
-    color: #77c9d4;
-}
+
 .skill-container .Tools {
     padding: 0 10px;
     font-weight: 500;
@@ -160,16 +161,15 @@ body{
     font-size: 15px;
     border-radius: 5px;
     padding: 5px;
-    background-color: black;
+    background-color: dodgerblue;
 }
-.Tools .elem:hover{
-    color: #77c9d4;
-}
+
 .experience{
     border-radius: 5px;
     margin: 0 auto;
     padding: 10px 10px;
-    background-color: #080f3b;
+    background-color: #162cbb;
+    box-shadow: 8px 8px 0 #000;
     color: white;
     text-align: center;
     width: 80%;
@@ -178,29 +178,24 @@ body{
     margin: 0 auto;
     width: 80%;
     padding: 10px 10px;
-    background-color: #080f3b;
+    background-color: #162cbb;
+    box-shadow: 8px 8px 0 #000;
     color: white;
     text-align: center;
     border-radius: 10px;
 }
 .contact-card button{
-    padding: 6px;
-    margin: 0 6px;
-    font-size: 20px;
-    font-family: "Roboto Mono", sans-serif;
-    background-color: white;
-    color: #080f3b;
-    border-radius: 50px;
+    background-color: #162cbb;
     border: none;
-    cursor: pointer;
 }
-.contact-card button:hover{
-    color: #77c9d4;
-    background-color: #1C3D5A;
+.contact-card button{
+    cursor: pointer;
 }
 footer{
     text-align: center;
-    background-color: #080f3b;
+    background-color: #162cbb;
     color: white;
     padding: 10px 10px;
 }
+
+
