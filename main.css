@@ -93,6 +93,18 @@ body{
     box-shadow: 8px 8px 0 #000;
     max-width: 100%;
 }
+.about-me .cv{
+    background-color: white;
+    color: #162cbb;
+    font-weight: 600;
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 15px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0 #000;
+    padding: 10px;
+    border: none;
+}
 .projects{
     border-radius: 10px;
     padding: 10px 10px;
@@ -136,33 +148,23 @@ body{
     border-radius: 10px;
 }
 .skill-container .languages{
+    
     padding: 0 10px;
     display: flex;
-    font-weight: 500;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-.languages .elem{
-    font-size: 15px;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: dodgerblue;
 }
 
 .skill-container .Tools {
     padding: 0 10px;
     font-weight: 500;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
-}
-.Tools .elem{
-    font-size: 15px;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: dodgerblue;
 }
 
 .experience{
@@ -198,5 +200,21 @@ footer{
     color: white;
     padding: 10px 10px;
 }
+@media (max-width: 768px) {
+    #nav-bar .logo{
+        display: none;
+    }
+    .navigation{
+        position: absolute;
+        left: 0;
+        width: 100%;
 
+    }
+    .navigation a{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    
+}
 
